@@ -345,7 +345,23 @@ void menuG::borrar()
 
 		}
 
+        // Verificar si no se encontró al usuario a borrar
+		if (encontrados == 0)
+		{
+			cout << "\n\t\t\t Nombre de producto no encontrado...";
+		}
 
+		// Cerrar los archivos
+		file1.close();
+		file.close();
+
+		// Borrar el archivo "Usuarios1.txt"
+		remove("catalogos.txt");
+
+		// Renombrar el archivo "Record.txt" como "Usuarios1.txt"
+		rename("record2.txt", "catalogos.txt");
+	}
+}
 
 
 
