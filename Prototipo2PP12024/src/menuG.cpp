@@ -224,3 +224,63 @@ void menuG::insertar()
 
 }
 
+void menuG::modificar()
+{
+
+	system("cls");
+    fstream fileOri, fileModif;  // Se crean dos objetos de archivo para leer y escribir en archivos de texto
+    string productoModificar;  // Se define una cadena para almacenar el nombre del usuario a modificar
+
+    int contador=0;  // Se define una variable para contar si se encuentra el usuario en el archivo
+    cout<<"\n-------------------------Modificar Productos-------------------------"<<endl;  // Muestra un mensaje en pantalla
+    fileOri.open("catalogos.txt",ios::in);  // Abre el archivo de texto en modo lectura
+
+    if(!fileOri)  // Si el archivo no se pudo abrir
+    {
+        cout<<"\n\t\t\tNo hay informacion..,";  // Muestra un mensaje en pantalla
+        fileOri.close();  // Cierra el archivo
+    }
+    else  // Si el archivo se pudo abrir
+    {
+        cout<<"\n Ingrese el nombre del producto que quiere modificar: ";  // Muestra un mensaje en pantalla para ingresar el usuario a modificar
+        cin>>productoModificar;  // Lee el nombre del usuario a modificar
+        fileModif.open("record2.txt",ios::app | ios::out);  // Abre otro archivo de texto en modo escritura y agrega el contenido al final del archivo
+        fileOri >> id>> nombre>>precio>>cantidad;  // Lee el primer usuario y contraseña del archivo
+
+        while(!fileOri.eof())  // Mientras no se llegue al final del archivo
+        {
+            if(productoModificar!=nombre)  // Si el usuario no es el que se quiere modificar
+                {
+                fileModif<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< nombre<<std::left<<std::setw(15)<< precio<<std::left<<std::setw(15)<< cantidad<<"\n";  // Escribe en el archivo temporal el usuario y contraseña sin modificar
+
+
+                }
+
+            else  // Si se encuentra el usuario a modificar
+                {
+                cout << "\t\t\t\nIngrese el nuevo ID:         ";
+                cin >> id;
+                cout << "\t\t\t\nIngrese el nuevo nombre:         ";
+                cin >> nombre;
+                cout << "\t\t\t\nIngrese el nuevo precio:         ";
+                cin >> precio;
+                cout << "\t\t\t\nIngrese la nueva cantidad:         ";
+                cin >> cantidad;
+                fileModif<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< nombre<<std::left<<std::setw(15)<< precio<<std::left<<std::setw(15)<< cantidad<<"\n";  // Escribe en el archivo temporal el usuario y contraseña sin modificar
+                contador++;  // Incrementa el contador de usuarios modificados
+                cout << "\t\t\t\n Modificado exitosamente.";
+                }
+
+                    fileOri >> id>> nombre>>precio>>cantidad; // Lee el siguiente usuario y contraseña del archivo
+        }
+
+        fileModif.close();  // Cierra el archivo temporal
+        fileOri.close();  // Cierra el archivo original
+
+        remove("catalogos.txt");  // Elimina el archivo original
+        rename("record2.txt","catalogos.txt");  // Renombra el archivo temporal con el nombre del archivo original
+         cout << "\t\t\t\n ...";
+          // Muestra un mensaje en pantalla
+    }
+}
+
