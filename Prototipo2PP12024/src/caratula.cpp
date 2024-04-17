@@ -1,3 +1,5 @@
+// Evelyn Sofia Andrade Luna
+// 9959-23-1224
 #include "caratula.h"
 #include <iostream>
 #include <fstream>
