@@ -1,0 +1,65 @@
+commit e74e87ce5c9fccbf3a41e872b9199629f7656283
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:58:07 2024 -0600
+
+    Programa Completo
+
+commit 221eff7158e831a4e3ac39750b17a6cdb2f64ec0
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:39:30 2024 -0600
+
+    creacion del main
+
+commit ae1ff88b02a2b6e9a34f951bbdcab83ad09035f0
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:36:23 2024 -0600
+
+    Actualizacion de verificacion
+
+commit 4b6f0d55a87b002ef867ba68c553d77fb280e07d
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:34:39 2024 -0600
+
+    Menu general borrar
+
+commit 23c620f4f45e0aa04ca463bcbe116efb8a73f662
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:33:11 2024 -0600
+
+    Menu General modificar
+
+commit d38a13e98c965243f16d94b728f89635478db8f0
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:31:29 2024 -0600
+
+    Menu general insertar
+
+commit 84c83167e107e469a39e2906cb37683a26bc3ea9
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:27:11 2024 -0600
+
+    creando menus
+
+commit e2cccddf596d1bc9cff22ea8febd4f5a894ea38e
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:21:15 2024 -0600
+
+    colocando metodos en menu general
+
+commit 9dac9d8eda57f10bc586f8a70e3f55d6f4516899
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:19:56 2024 -0600
+
+    creando encabezado de menu general
+
+commit 035fe4f04ebe6a8ed0b4b800fdcdca4268560f4b
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:16:16 2024 -0600
+
+    creacion de caratula
+
+commit 43f794667830e0582600f9848c1ba459f3d695e9
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Wed Apr 17 10:05:33 2024 -0600
+
+    creacion Usuario
