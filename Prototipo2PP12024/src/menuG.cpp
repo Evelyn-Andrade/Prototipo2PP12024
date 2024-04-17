@@ -283,4 +283,69 @@ void menuG::modificar()
           // Muestra un mensaje en pantalla
     }
 }
+void menuG::borrar()
+{
+   	system("cls");
+
+	// Declarar dos objetos de la clase fstream para manejar los archivos
+	fstream file, file1;
+
+	// Declarar una variable para almacenar el nombre del usuario a borrar
+	string partcipante;
+
+	// Declarar una variable para indicar si se encontró al usuario a borrar
+	int encontrados= 0;
+
+	// Mostrar un mensaje para indicar que se va a borrar un usuario
+	cout << "\n-------------------------Borrar Producto-------------------------" << endl;
+
+	// Abrir el archivo "Usuarios1.txt" en modo lectura
+	file.open("catalogos.txt", ios::in);
+
+	// Verificar si el archivo se pudo abrir
+	if (!file)
+	{
+		cout << "\n\t\t\tNo hay informacion...";
+
+		// Cerrar el archivo
+		file.close();
+	}
+	else
+	{
+		// Pedir al usuario que ingrese el nombre del usuario a borrar
+		cout << "\n Ingrese el nombre del producto que quiere borrar: ";
+		cin >> partcipante;
+
+		// Abrir el archivo "Record.txt
+		file1.open("record2.txt", ios::app | ios::out);
+
+		// Leer el nombre de usuario y contraseña del archivo "Usuario y contraseñas.txt"
+		file >> id>> nombre>>precio>>cantidad;
+
+		// Mientras no se llegue al final del archivo "Usuarios1.txt"
+		while (!file.eof())
+		{
+			// Verificar si el nombre de usuario leído es diferente al nombre del usuario a borrar
+			if (partcipante != nombre)
+			{
+				// Escribir el nombre de usuario y contraseña en el archivo "Record.txt"
+                file1<<std::left<<std::setw(15)<< id <<std::left<<std::setw(15)<< nombre<<std::left<<std::setw(15)<< precio<<std::left<<std::setw(15)<< cantidad<<"\n";  // Escribe en el archivo temporal el usuario y contraseña sin modificar
+			}
+			else
+			{
+				// Incrementar el contador de usuarios encontrados
+				encontrados++;
+
+				// Mostrar un mensaje indicando que se borró al usuario exitosamente
+				cout << "\n\t\t\t Borrado exitosamente";
+			}
+
+			// Leer el siguiente nombre de usuario y contraseña del archivo "Usuarios1.txt"
+                file >> id>> nombre>>precio>>cantidad;
+
+		}
+
+
+
+
 
