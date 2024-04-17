@@ -114,7 +114,7 @@ bool usuario::VerificarUsuario()
     }
 }
 
-    //Si encuentra a user y pass , se retornara un true
+
    if (encontrado)
     {
     cout << "\n\tBienvenido " << usuario << "!" << endl;

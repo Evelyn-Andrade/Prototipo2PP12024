@@ -1,3 +1,5 @@
+// Evelyn Sofia Andrade Luna
+// 9959-23-1224
 #include "menuG.h"
 #include<iostream>
 #include<fstream>
@@ -105,7 +107,7 @@ int opcion;
    {
 
      cout <<"\t\t\t--------------------------------------------"<<endl;
-    cout <<"\t\t\t |       MENU De USUARIOS     |"<<endl;
+    cout <<"\t\t\t |       MENU De PRODUCTOS   |"<<endl;
     cout <<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\t 1. Ingreso nuevos productos"<<endl;
 	cout<<"\t\t\t 2. Modificar Productos"<<endl;
@@ -223,7 +225,6 @@ void menuG::insertar()
 
 
 }
-
 void menuG::modificar()
 {
 
@@ -283,6 +284,7 @@ void menuG::modificar()
           // Muestra un mensaje en pantalla
     }
 }
+
 void menuG::borrar()
 {
    	system("cls");
@@ -345,10 +347,10 @@ void menuG::borrar()
 
 		}
 
-        // Verificar si no se encontró al usuario a borrar
+		// Verificar si no se encontró al usuario a borrar
 		if (encontrados == 0)
 		{
-			cout << "\n\t\t\t Nombre de producto no encontrado...";
+			cout << "\n\t\t\t ...";
 		}
 
 		// Cerrar los archivos
@@ -362,6 +364,10 @@ void menuG::borrar()
 		rename("record2.txt", "catalogos.txt");
 	}
 }
+
+
+
+
 
 
 

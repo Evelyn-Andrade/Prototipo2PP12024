@@ -1,4 +1,4 @@
-#ifndef CARATULA_H
+
 #ifndef CARATULA_H
 #define CARATULA_H
 

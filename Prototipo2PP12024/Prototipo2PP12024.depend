@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1713372498 source:c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\src\menug.cpp
+	"menuG.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1713370830 c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\include\menug.h
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1713369633 source:c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\src\usuario.cpp
+	"usuario.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1713369732 c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\include\usuario.h
+	<iostream>
+	<fstream>
+	<string>
+
+1713371927 source:c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\main.cpp
+	<iostream>
+	<usuario.h>
+	<menuG.h>
+	<caratula.h>
+
+1713372172 c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\include\caratula.h
+	<string>
+
+1713371874 source:c:\users\usuario\desktop\3er semestre\parcial2\prototipo2pp12024\src\caratula.cpp
+	"caratula.h"
+	<iostream>
+	<fstream>
+

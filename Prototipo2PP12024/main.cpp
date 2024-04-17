@@ -1,8 +1,5 @@
 // Evelyn Sofia Andrade Luna
 // 9959-23-1224
-
-// Evelyn Sofia Andrade Luna
-// 9959-23-1224
 #include <iostream>
 #include <usuario.h>
 #include <menuG.h>
@@ -16,7 +13,6 @@ int main()
     juego.dibujarPortada("Portada.txt");
 
     std::cout << "Presiona cualquier tecla para continuar...";
-    std::cin.ignore(); // Ignorar cualquier entrada anterior
     std::cin.get();    // Esperar a que el usuario presione una tecla
     system("cls");
 // ---------------------------------------------------------------------------------------------
