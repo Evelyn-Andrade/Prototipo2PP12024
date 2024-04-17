@@ -21,5 +21,18 @@ class menuG
 
         string setCantidad(string cantidad);
         string getCantidad();
+//metodos
 
+     void menuPrincipal();
+     void submenu();
+     void insertar();
+     	void desplegar();
+		void modificar();
+		void buscar();
+		void borrar();
+
+    protected:
+
+    private:
+    string id,nombre,precio,cantidad;
 };
